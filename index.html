@@ -88,14 +88,13 @@
                 </div>
             </div>
         </section>
-
         <!-- end about me -->
 
 
 
         <!-- start project -->
         <section id="project">
-            <div class ="container my-5 py-5">
+            <div class ="container my-5 py-3">
                 <div class="row mb-5">
                     <div class="col-12">
                         <h1 class="text-center text-primary">Project</h1>
@@ -129,45 +128,49 @@
                 </div>
             </div>
         </section>
-
         <!-- end project -->
 
-        <!-- start contact -->
 
+
+        <!-- start contact -->
         <section id="contact" class="contact-me">
             <h1 class="text-primary">Contact</h1>
 
             <div class="container">
+                <form action="/action_page.php" class="was-validated">
                 <div class="contact-form row">
                     <div class="form-field col-lg-6">
-                        <input id="name" class="input" type="text" name="">
-                        <label for="name" class="label">Name</label>
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                     <div class="form-field col-lg-6">
-                        <input id="email" class="input" type="email" name="">
-                        <label for="email" class="label">Email</label>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                     <div class="form-field col-lg-6">
-                        <input id="subject" class="input" type="text" name="">
-                        <label for="subject" class="label">Subject</label>
+                        <label for="phone">Phone Number</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone Number" name="number" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                     <div class="form-field col-lg-6">
-                        <input id="phone" class="input" type="text" name="">
-                        <label for="phone" class="label">Phone Number</label>
+                        <label for="message">Message</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Message" name="message" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
-                    <div class="form-field col-lg-6">
-                        <input id="message" class="input" type="text" name="">
-                        <label for="message" class="label">Messenge</label>
-                    </div>
-                    <div class="form-field col-lg-6">
-                        <input class="submit-btn" type="submit" value="SUBMIT" name="">
+                    <div class="form-field col-lg-12 text-center pt-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
+            </form>
             </div>
         </section>
-
-
-        <!-- end contack -->
+        <!-- end contact -->
 
 
         <!-- start footer -->
